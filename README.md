@@ -59,73 +59,75 @@ Long URLs are difficult to share and manage. This project solves the problem by 
 Creates a shortened URL from a long URL.
 
 Request Body Example
+```json
 {
   "url": "https://example.com",
   "custom_alias": "myalias"
 }
-
+```
 Response Example
+```json
 {
   "short_code": "myalias",
   "short_url": "http://localhost:5000/myalias",
   "original_url": "https://example.com"
 }
+```
 
-How to Run the Project
-Backend Setup (Flask)
-Prerequisites
+## How to Run the Project
+### Backend Setup (Flask)
 
-Python 3.9 or higher
+**Prerequisites**
 
-MongoDB (local or via MongoDB Atlas)
+1. Python 3.9 or higher
+2. MongoDB (local or via MongoDB Atlas)
 
-Steps
+**Steps**
 
-Navigate to the backend directory:
-
+1.Navigate to the backend directory:
+```bash
 cd backend
+```
 
-
-Create a virtual environment:
-
+2. Create a virtual environment:
+```bash
 python -m venv venv
+```
 
-
-Activate the virtual environment:
+3. Activate the virtual environment:
 
 Windows
-
+```bash
 venv\Scripts\activate
-
-
+```
 macOS / Linux
-
+```bash
 source venv/bin/activate
+```
 
-
-Install dependencies:
-
+4. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-
-Start the Flask server:
-
+5. Start the Flask server:
+```bash
 python app.py
+```
 
-Frontend Setup (React)
+### Frontend Setup (React)
 
-Navigate to the frontend directory:
-
+1. Navigate to the frontend directory:
+```bash
 cd frontend
+```
 
-
-Install dependencies:
-
+2. Install dependencies:
+```bash
 npm install
+```
 
-
-Start the React development server:
-
+3. Start the React development server:
+```bash
 npm start
-
-
+```
